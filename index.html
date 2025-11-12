@@ -3,56 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Chủ Dịch Vụ Buôn Ma túy</title>
+    <title>Trang Chủ GitHub Của Tôi</title>
     <style>
         body {
-            /* Căn giữa toàn bộ nội dung theo chiều ngang */
+            /* Cài đặt chung */
             display: flex;
             justify-content: center;
-            /* Căn giữa toàn bộ nội dung theo chiều dọc (nếu cần) */
-            align-items: center;
-            /* Thiết lập chiều cao tối thiểu để căn giữa dọc hoạt động */
+            align-items: flex-start;
             min-height: 100vh;
             margin: 0;
-            /* Cài đặt font chữ và màu nền cơ bản */
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0; /* Màu nền nhẹ */
-            color: #333; /* Màu chữ cơ bản */
-            text-align: center; /* Đảm bảo tiêu đề bên trong center-container cũng được căn giữa */
+            padding-top: 40px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5; /* Màu nền nhẹ nhàng cho toàn bộ trang */
+            color: #2c3e50;
         }
 
-        .center-container {
-            /* Container chứa tiêu đề và avatar */
+        .main-profile-card {
+            /* Container chính để chứa cả hai phần (Đen & Trắng) */
+            width: 90%;
+            max-width: 500px;
+            border-radius: 12px;
+            overflow: hidden; /* Quan trọng để bo góc tổng thể */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-section {
+            /* Phần trên - Khung màu Đen (Avatar & Tiêu đề) */
+            background-color: #222; /* Màu đen */
+            color: #ffffff;
+            padding: 40px 20px 80px 20px; /* Thêm padding lớn ở dưới để avatar có thể chèn vào */
             display: flex;
-            flex-direction: column; /* Xếp các phần tử theo cột */
-            align-items: center; /* Căn giữa các phần tử bên trong theo chiều ngang */
-            padding: 20px;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            position: relative; /* Để định vị avatar */
         }
 
         .avatar {
-            /* Thiết lập kích thước và hình tròn cho avatar */
-            width: 150px; /* Kích thước ảnh */
-            height: 150px;
-            border-radius: 50%; /* Biến ảnh thành hình tròn */
-            object-fit: cover; /* Đảm bảo ảnh hiển thị đầy đủ và không bị biến dạng */
-            margin-bottom: 20px; /* Khoảng cách với tiêu đề */
-            border: 5px solid #fff; /* Viền trắng (tùy chọn) */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng nhẹ */
+            /* Avatar hình tròn, đặt ở ranh giới giữa hai phần */
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #ffffff; /* Viền trắng nổi bật */
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            /* Định vị tuyệt đối để nằm giữa hai khối */
+            position: absolute;
+            bottom: -70px; /* Di chuyển lên 1 nửa chiều cao (-140px/2) so với đáy khối đen */
         }
 
         h1 {
-            color: #2196F3; /* Màu xanh nổi bật cho tiêu đề */
+            /* Tiêu đề trong khối đen */
             font-size: 2em;
             margin: 0;
+            color: #ffffff;
+        }
+
+        .info-section {
+            /* Phần dưới - Khung màu Trắng (Giới thiệu) */
+            background-color: #ffffff; /* Màu trắng */
+            padding: 90px 30px 30px 30px; /* Padding trên lớn hơn để chừa chỗ cho avatar */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .info-line {
+            /* Định dạng cho 3 dòng giới thiệu */
+            font-size: 1.1em;
+            color: #555;
+            margin: 10px 0;
+            padding: 5px 0;
+        }
+
+        hr {
+            /* Đường kẻ ngang trang trí */
+            border: none;
+            height: 1px;
+            background-color: #ddd;
+            margin: 15px 0;
+            width: 50%;
         }
     </style>
 </head>
 <body>
 
-    <div class="center-container">
-        <h1>Chào mừng đến với trang chủ Buôn Ma túy</h1>
+    <div class="main-profile-card">
         
-        <img src="YOUR_AVATAR_URL_HERE" alt="Ảnh đại diện" class="avatar">
+        <div class="header-section">
+            
+            <h1>Anh Quốc / Buôn Hàng Cấm</h1>
+            
+            <img src="YOUR_AVATAR_URL_HERE" alt="Ảnh đại diện" class="avatar">
+        </div>
+
+        <div class="info-section">
+            
+            <hr>
+            <p class="info-line">Dòng 1: Chúng tôi Buôn Hàng thông Qua Mối quan hệ và được các đàn em bảo vệ 24/7.</p>
+            
+            <hr>
+            <p class="info-line">Dòng 2: Chất Liệu (Buôn Hàng Loại siêu chât lượng). </p>
+            
+            <hr>
+            <p class="info-line">Dòng 3: Nếu Giao Dịch Có lỗi thì chúng tôi cam kết đền bù 99%.</p>
+        </div>
 
     </div>
 
