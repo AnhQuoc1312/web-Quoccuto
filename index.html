@@ -3,28 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thông tin Lớp</title>
+    <title>Trang Chủ - Website Demo</title>
     <style>
-        /* Thiết lập nền trắng cho toàn bộ trang */
-        body {
-            background-color: white; /* Nền trắng */
-            color: #FF69B4; /* Màu chữ: Hồng (Hot Pink) */
-            font-family: Arial, sans-serif;
-            display: flex; /* Dùng flexbox để căn giữa nội dung */
-            justify-content: center;
-            align-items: center;
-            height: 100vh; /* Chiều cao đầy đủ của khung nhìn */
-            margin: 0;
-            text-align: center;
-        }
-
-        /* Định dạng cho đoạn chữ */
-        h1 {
-            font-size: 3em; /* Kích thước chữ lớn */
-        }
+        /* CSS Chung (Dán CSS từ mục 1 vào đây) */
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; }
+        header { background-color: #333; color: white; padding: 1em 0; text-align: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; padding: 5px 10px; }
+        nav a:hover { background-color: #575757; border-radius: 3px; }
+        .content { padding: 20px; margin: 20px; background-color: white; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
     </style>
 </head>
 <body>
-    <h1>TÔI LÀ LỚP 41T2</h1>
+
+    <header>
+        <nav>
+            <a href="index.html">Trang Chủ</a>
+            <a href="dichvu.html">Dịch Vụ</a>
+            <a href="thongtin.html">Thông Tin</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h2>Chào mừng đến với Trang Chủ!</h2>
+        <p>Đây là nội dung chính của trang web. Sử dụng menu điều hướng phía trên để chuyển sang các trang khác.</p>
+        <p>Để tạo trang này trên GitHub, bạn cần lưu mã này vào tệp <code>index.html</code> trong Repository của mình và kích hoạt GitHub Pages.</p>
+    </div>
+
 </body>
 </html>
