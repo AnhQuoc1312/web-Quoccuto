@@ -3,30 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Chủ - Website Demo</title>
+    <title>Trang Chủ Dịch Vụ Buôn Ma túy</title>
     <style>
-        /* CSS Chung (Dán CSS từ mục 1 vào đây) */
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; }
-        header { background-color: #333; color: white; padding: 1em 0; text-align: center; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; padding: 5px 10px; }
-        nav a:hover { background-color: #575757; border-radius: 3px; }
-        .content { padding: 20px; margin: 20px; background-color: white; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        body {
+            /* Căn giữa toàn bộ nội dung theo chiều ngang */
+            display: flex;
+            justify-content: center;
+            /* Căn giữa toàn bộ nội dung theo chiều dọc (nếu cần) */
+            align-items: center;
+            /* Thiết lập chiều cao tối thiểu để căn giữa dọc hoạt động */
+            min-height: 100vh;
+            margin: 0;
+            /* Cài đặt font chữ và màu nền cơ bản */
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; /* Màu nền nhẹ */
+            color: #333; /* Màu chữ cơ bản */
+            text-align: center; /* Đảm bảo tiêu đề bên trong center-container cũng được căn giữa */
+        }
+
+        .center-container {
+            /* Container chứa tiêu đề và avatar */
+            display: flex;
+            flex-direction: column; /* Xếp các phần tử theo cột */
+            align-items: center; /* Căn giữa các phần tử bên trong theo chiều ngang */
+            padding: 20px;
+        }
+
+        .avatar {
+            /* Thiết lập kích thước và hình tròn cho avatar */
+            width: 150px; /* Kích thước ảnh */
+            height: 150px;
+            border-radius: 50%; /* Biến ảnh thành hình tròn */
+            object-fit: cover; /* Đảm bảo ảnh hiển thị đầy đủ và không bị biến dạng */
+            margin-bottom: 20px; /* Khoảng cách với tiêu đề */
+            border: 5px solid #fff; /* Viền trắng (tùy chọn) */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng nhẹ */
+        }
+
+        h1 {
+            color: #2196F3; /* Màu xanh nổi bật cho tiêu đề */
+            font-size: 2em;
+            margin: 0;
+        }
     </style>
 </head>
 <body>
 
-    <header>
-        <nav>
-            <a href="index.html">Trang Chủ</a>
-            <a href="dichvu.html">Dịch Vụ</a>
-            <a href="thongtin.html">Thông Tin</a>
-        </nav>
-    </header>
+    <div class="center-container">
+        <h1>Chào mừng đến với trang chủ Buôn Ma túy</h1>
+        
+        <img src="YOUR_AVATAR_URL_HERE" alt="Ảnh đại diện" class="avatar">
 
-    <div class="content">
-        <h2>Chào mừng đến với Trang Chủ!</h2>
-        <p>Đây là nội dung chính của trang web. Sử dụng menu điều hướng phía trên để chuyển sang các trang khác.</p>
-        <p>Để tạo trang này trên GitHub, bạn cần lưu mã này vào tệp <code>index.html</code> trong Repository của mình và kích hoạt GitHub Pages.</p>
     </div>
 
 </body>
