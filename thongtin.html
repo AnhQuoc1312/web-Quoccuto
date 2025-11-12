@@ -2,33 +2,83 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thông Tin - Website Demo</title>
+    <title>Thông Tin Cá Nhân - Đặng Anh Quốc</title>
     <style>
-        /* CSS Chung (Dán CSS từ mục 1 vào đây) */
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; }
-        header { background-color: #333; color: white; padding: 1em 0; text-align: center; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; padding: 5px 10px; }
-        nav a:hover { background-color: #575757; border-radius: 3px; }
-        .content { padding: 20px; margin: 20px; background-color: white; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        /* CSS để đồng bộ với Trang Chủ */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4; /* Màu nền trang web: xanh dương */
+            color: #333; /* Màu chữ chính: Đen */
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #0056b3; /* Màu tiêu đề chính: đỏ */
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+        }
+
+        h2, h3 {
+            color: #007bff; /* Màu tiêu đề phụ: Xanh đậm */
+        }
+
+        /* Định dạng cho tất cả các đường liên kết */
+        a {
+            color: #007bff; /* Màu đường link */
+            text-decoration: none; /* LOẠI BỎ GẠCH CHÂN */
+        }
+
+        /* Hiệu ứng khi di chuột qua đường link */
+        a:hover {
+            color: #0056b3; /* Màu link khi di chuột: Xanh đậm */
+            text-decoration: underline; /* Thêm lại gạch chân khi di chuột */
+        }
+
+        ul {
+            list-style: none; /* Loại bỏ dấu chấm đầu dòng */
+            padding-left: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #ccc;
+            margin: 20px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #e9ecef; /* Màu nền footer: Xám rất nhạt */
+            color: #6c757d;
+            border-top: 1px solid #ccc;
+        }
     </style>
 </head>
 <body>
+    <h1>Thông Tin Cá Nhân & Liên Hệ</h1>
+    
+    <h2>Đặng Anh Quốc</h2>
 
-    <header>
-        <nav>
-            <a href="index.html">Trang Chủ</a>
-            <a href="dichvu.html">Dịch Vụ</a>
-            <a href="thongtin.html">Thông Tin</a>
-        </nav>
-    </header>
+    <p>Dưới đây là một số thông tin cơ bản và cách thức liên lạc với tôi.</p>
+    
+    <h3>Chi Tiết Cá Nhân</h3>
+    <ul>
+        <li><strong>Ngày sinh:</strong> [13/12/2009]</li>
+        <li><strong>Quê quán:</strong> [Thành phố Nha Trang]</li>
+        <li><strong>Trình độ học vấn:</strong> [Trung học Phổ thông]</li>
+        <li><strong>Sở thích:</strong> [Photoshop]</li>
+    </ul>
 
-    <div class="content">
-        <h2>Thông Tin Liên Hệ</h2>
-        <p>Địa chỉ: Đường A, Phố B, Tỉnh C</p>
-        <p>Email: contact@example.com</p>
-        <p>Điện thoại: (012) 345-6789</p>
-    </div>
-
-</body>
-</html>
+    <h3>Liên Hệ</h3>
+    <ul>
+        <li><strong>Email:</strong> <a href="mailto:dangquoc2009nt@gmail.com">[dangquoc2009nt@gmail.com]</a></li>
+        <li><strong>Điện thoại:</strong> [0792036882]</li>
+        <li><strong>Địa chỉ hiện tại:</strong> [Vĩnh Ngọc]</li>
+        <li><strong>GitHub/Portfolio:</strong> <a href="[Đường dẫn GitHub của bạn]" target="_blank">[Đường dẫn GitHub của bạn]</a></li>
+    </ul>
